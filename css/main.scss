@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+body {
+    margin: 0;
+    font-family: 'Karla';
+    background-color: var(--LightGray) !important;
+}
+header {
+    p {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
+main {
+    position: absolute;               
+    top: 47%;      
+    left: 50%;            
+    transform: translate(-47%, -50%);
+    .container {
+        width: 365px;
+        margin: auto;
+        border-radius: 5px;
+        font-family: 'Karla';
+        box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, 0.159);
+
+            h2,h3 {
+                color: var(--Cyan);
+                font-size: 1.15em;
+                font-weight: 700;
+        
+            }
+            h1 {
+                color: var(--Cyan);
+                font-size: 1.4em;
+                font-weight: 700;
+            }
+            h2 {
+                color: var(--BrightYellow);
+            }
+            h3  {
+                color: var(--LightGray);
+            }
+            h4 {
+                font-size: 1.9em;
+                font-weight: 700;
+                color: var(--LightGray);
+                
+                span {
+                    font-size: .55em !important;
+                    color: hsla(0, 0%, 100%, 0.368);;
+                    font-weight: 700;
+                }
+            }
+            p {
+                color: var(--GrayishBlue);
+            }
+        
+        .first-col {
+            background-color: var(--Cyan) !important;
+            p {
+                color: var(--LightGray);
+                
+            }
+            .sign-up-btn {
+                margin: 0 !important;
+                padding: 0 !important;
+                .btn {
+                    width: 90%;
+                    margin: auto;
+                    background-color: var(--BrightYellow);
+                    color: var(--LightGray);
+                    font-weight: 700;
+                    padding: 8px 0px;
+                }
+            }
+        }
+        .second-col {
+            background-color: hsla(179, 62%, 43%, 0.766);
+            border-radius: 0px 0 5px 5px;
+            ul {
+                margin: 0;
+                padding: 0;
+                li {
+                    list-style-type: none;
+                    color: var(--LightGray);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    main {
+        .container {
+            width: 630px;
+            .first-col {
+                border-bottom-left-radius: 5px;
+                p {
+                    margin-top: .6em;
+                }
+                .subscription {
+                    padding-top: 2em !important;
+
+                    h4 {
+                        margin-top: .6em;
+                    }
+                    .sign-up-btn {
+                        .btn {
+                            width: 83%;
+                           
+                        }
+                    }
+                }
+            }
+            .second-col {
+                border-bottom-left-radius: 0;
+                .sub-content {
+                    padding-top: 2em !important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 54%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+body {
+  margin: 0;
+  font-family: 'Karla';
+  background-color: var(--LightGray) !important;
+}
+
+header p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+main {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  -webkit-transform: translate(-47%, -50%);
+          transform: translate(-47%, -50%);
+}
+
+main .container {
+  width: 365px;
+  margin: auto;
+  border-radius: 5px;
+  font-family: 'Karla';
+  -webkit-box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, 0.159);
+          box-shadow: 0px 0px 40px -5px rgba(0, 0, 0, 0.159);
+}
+
+main .container h2, main .container h3 {
+  color: var(--Cyan);
+  font-size: 1.15em;
+  font-weight: 700;
+}
+
+main .container h1 {
+  color: var(--Cyan);
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+main .container h2 {
+  color: var(--BrightYellow);
+}
+
+main .container h3 {
+  color: var(--LightGray);
+}
+
+main .container h4 {
+  font-size: 1.9em;
+  font-weight: 700;
+  color: var(--LightGray);
+}
+
+main .container h4 span {
+  font-size: .55em !important;
+  color: rgba(255, 255, 255, 0.368);
+  font-weight: 700;
+}
+
+main .container p {
+  color: var(--GrayishBlue);
+}
+
+main .container .first-col {
+  background-color: var(--Cyan) !important;
+}
+
+main .container .first-col p {
+  color: var(--LightGray);
+}
+
+main .container .first-col .sign-up-btn {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+main .container .first-col .sign-up-btn .btn {
+  width: 90%;
+  margin: auto;
+  background-color: var(--BrightYellow);
+  color: var(--LightGray);
+  font-weight: 700;
+  padding: 8px 0px;
+}
+
+main .container .second-col {
+  background-color: rgba(42, 178, 175, 0.766);
+  border-radius: 0px 0 5px 5px;
+}
+
+main .container .second-col ul {
+  margin: 0;
+  padding: 0;
+}
+
+main .container .second-col ul li {
+  list-style-type: none;
+  color: var(--LightGray);
+}
+
+@media (min-width: 1000px) {
+  main .container {
+    width: 630px;
+  }
+  main .container .first-col {
+    border-bottom-left-radius: 5px;
+  }
+  main .container .first-col p {
+    margin-top: .6em;
+  }
+  main .container .first-col .subscription {
+    padding-top: 2em !important;
+  }
+  main .container .first-col .subscription h4 {
+    margin-top: .6em;
+  }
+  main .container .first-col .subscription .sign-up-btn .btn {
+    width: 83%;
+  }
+  main .container .second-col {
+    border-bottom-left-radius: 0;
+  }
+  main .container .second-col .sub-content {
+    padding-top: 2em !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
